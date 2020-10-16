@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CarShowroom</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">View Order</a></li>
+          <li><a href="#">Place Order</a></li>
+          <li><a href="#">Previous Order</a></li>
+        </ul>
+      </li>
+      <li class="active"><a href="#">Products</a></li>
+      <li><a href="#">Employees</a></li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+  <div class="col-lg-4" style="border-right: 5px solid black;position: fixed;left:0%;top:50px;height: 100%">
+    <div class="row" style="padding-top:50px ;border-bottom: 1px solid black;padding-bottom: 3%">
+      <p style="text-align: center;font-size: 11rem">S</p>
+    </div>
+    <div class="row">
+       <p>Do all the filter processing here</p>
+    </div>
+    
+   
+  </div>
+  <div class="row">
+    <div class="col-lg-8" style="position: fixed;right:0%;top:50px;height: 100%">
+  <h3>Do all the Object rendering here</h3>
+  <h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3>
+  <h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3>
+  <h3>Do all the Object rendering here</h3>
+  <h3>Do all the Object rendering here</h3>
+  <h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3><h3>Do all the Object rendering here</h3>
+  <p></p>
+</div>
+  
+</div>
+
+</div>
+<script >
+    let userObject=<%-JSON.stringify(userObject)%>
+  console.log("hii",userObject)
+
+  let sellObject=<%-JSON.stringify(sellObject)%>
+  console.log("hii2",sellObject);
+
+  let orderObject=<%-JSON.stringify(orderObject)%>
+   
+  console.log("hii3",orderObject);
+  
+  let update=<%-JSON.stringify(update)%>
+  console.log("hii4",update);
+</script>
+
+</body>
+</html>
